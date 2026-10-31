@@ -1,232 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FocusOS</title>
-  <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FocusOS | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
 </head>
+
 
 <body>
 
-<header>
-  <div class="logo"><b>F</b><span>FocusOS</span></div>
+<header class="main-header">
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#session">Focus Session</a>
-    <a href="#features">Features</a>
-    <a href="#about">About</a>
-  </nav>
+    <a href="index.html"
+       class="brand-logo">
 
-  <button>Start Focusing</button>
+        <span class="logo-circle"></span>
+
+        <strong>
+            FOCUS OS
+        </strong>
+
+    </a>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html"
+           class="active">
+            Home
+        </a>
+
+        <a href="session.html">
+            Focus Session
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="features.html">
+            Features
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a href="login.html"
+           class="login-link">
+            Log In
+        </a>
+
+        <a href="session.html"
+           class="button-primary">
+            Start Focusing
+        </a>
+
+    </div>
+
 </header>
 
 
-<section class="hero" id="home">
+<main>
 
-  <div class="hero-text">
-    <span class="tag">SMART STUDY COMPANION</span>
+    <section class="home-hero">
 
-    <h1>
-      Stay present.
-      <em>Stay productive.</em>
-    </h1>
+        <div class="hero-copy">
 
-    <p>...</p>
+            <span class="eyebrow">
+                SMART STUDY COMPANION
+            </span>
 
-    <div class="buttons">
-      <button>Start a Focus Session →</button>
-      <button class="outline">Explore Features</button>
+            <h1>
+                Focus on what
+                <em>actually matters.</em>
+            </h1>
+
+            <p>
+                FocusOS helps you stay present during
+                study and work sessions by combining
+                focus monitoring, session goals,
+                reminders, and productivity insights.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a href="session.html"
+                   class="button-primary">
+
+                    Start a Focus Session →
+
+                </a>
+
+
+                <a href="features.html"
+                   class="button-secondary">
+
+                    Explore Features
+
+                </a>
+
+            </div>
+
+
+            <div class="quick-benefits">
+
+                <div>
+                    <b>LIVE</b>
+                    <span>Focus monitoring</span>
+                </div>
+
+                <div>
+                    <b>GOALS</b>
+                    <span>Session intentions</span>
+                </div>
+
+                <div>
+                    <b>SMART</b>
+                    <span>Progress tracking</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="home-preview-card">
+
+            <div class="preview-heading">
+
+                <div>
+
+                    <small>
+                        FOCUS SESSION
+                    </small>
+
+                    <h2>
+                        Ready to begin
+                    </h2>
+
+                </div>
+
+
+                <span class="status-pill">
+                    ● READY
+                </span>
+
+            </div>
+
+
+            <div class="focus-visual">
+
+                <div class="camera-grid"></div>
+
+                <div class="scanner-line"></div>
+
+
+                <div class="person-outline">
+
+                    <div class="person-head"></div>
+
+                    <div class="person-body"></div>
+
+                </div>
+
+
+                <div class="visual-status">
+                    ● Ready to monitor
+                </div>
+
+            </div>
+
+
+            <div class="preview-stats">
+
+                <div>
+
+                    <strong>
+                        00:00
+                    </strong>
+
+                    <span>
+                        Session Time
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        --
+                    </strong>
+
+                    <span>
+                        Focus Score
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="content-section centered-section">
+
+        <span class="eyebrow">
+            START WITH A PURPOSE
+        </span>
+
+        <h2>
+            Decide what you want to accomplish.
+        </h2>
+
+        <p>
+            Before starting a session, FocusOS allows
+            you to choose what type of work you're doing
+            and enter a specific goal for the session.
+        </p>
+
+
+        <div class="goal-example">
+
+            <small>
+                EXAMPLE SESSION GOAL
+            </small>
+
+            <strong>
+                Finish the ER diagram for IT 214
+            </strong>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="brand-logo light-brand">
+
+        <span class="logo-circle"></span>
+
+        <strong>
+            FOCUS OS
+        </strong>
+
     </div>
 
-    <div class="quick-info">
-      <div><b>LIVE</b><span>Camera Monitoring</span></div>
-      <div><b>VOICE</b><span>Focus Reminders</span></div>
-      <div><b>SMART</b><span>Distraction Detection</span></div>
-    </div>
-  </div>
+    <span>
+        &copy; 2026 FocusOS
+    </span>
 
-
-  <div class="preview">
-    <div class="session-card">
-
-      <div class="card-top">
-        <b>Focus Session</b>
-        <span>● LIVE</span>
-      </div>
-
-      <div class="fake-camera">
-        <div class="person">
-          <div class="head"></div>
-          <div class="body"></div>
-        </div>
-
-        <small>● Ready to monitor</small>
-      </div>
-
-      <div class="results">
-        <div><b>45:00</b><span>Session Time</span></div>
-        <div><b>92%</b><span>Focus Score</span></div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-
-<section class="session" id="session">
-
-  <div class="title">
-    <span class="tag">FOCUS SESSION</span>
-    <h2>Your Productivity Dashboard</h2>
-    <p>...</p>
-  </div>
-
-
-  <div class="dashboard">
-
-    <div class="camera-box">
-
-      <div class="camera-heading">
-        <div>
-          <h3>Live Focus Camera</h3>
-          <p>...</p>
-        </div>
-
-        <span>Camera Active</span>
-      </div>
-
-
-      <div class="camera-screen">
-        <div class="camera-icon">◉</div>
-        <h3>Camera Preview</h3>
-        <p>...</p>
-
-        <small>● Monitoring focus</small>
-      </div>
-
-
-      <div class="camera-buttons">
-        <button>Start Session</button>
-        <button>End Session</button>
-        <button>View Distraction Alert</button>
-      </div>
-
-    </div>
-
-
-    <div class="stats">
-
-      <div class="box timer">
-        <small>SESSION TIMER</small>
-        <strong>32:18</strong>
-        <p>...</p>
-      </div>
-
-
-      <div class="box">
-        <div class="score">
-          <b>Focus Score</b>
-          <b>92%</b>
-        </div>
-
-        <div class="bar"><span></span></div>
-
-        <p>...</p>
-      </div>
-
-
-      <div class="mini-row">
-        <div class="box mini">
-          <span>✓</span>
-          <div>
-            <small>Focused Time</small>
-            <b>29:42</b>
-          </div>
-        </div>
-
-        <div class="box mini">
-          <span>!</span>
-          <div>
-            <small>Distractions</small>
-            <b>2</b>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="box status">
-        <span>✓</span>
-        <div>
-          <small>Current Status</small>
-          <b>Focused</b>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="features" id="features">
-
-  <div class="title">
-    <span class="tag">HOW IT WORKS</span>
-    <h2>...</h2>
-  </div>
-
-
-  <div class="feature-grid">
-
-    <article>
-      <small>01</small>
-      <span>◉</span>
-      <h3>Enable Your Camera</h3>
-      <p>...</p>
-    </article>
-
-    <article>
-      <small>02</small>
-      <span>◎</span>
-      <h3>Monitor Distractions</h3>
-      <p>...</p>
-    </article>
-
-    <article>
-      <small>03</small>
-      <span>♪</span>
-      <h3>Receive Voice Reminders</h3>
-      <p>...</p>
-    </article>
-
-    <article>
-      <small>04</small>
-      <span>↗</span>
-      <h3>Track Your Progress</h3>
-      <p>...</p>
-    </article>
-
-  </div>
-
-</section>
-
-
-<section class="why" id="about">
-  <div>
-    <span class="tag">WHY FOCUSOS?</span>
-    <h2>...</h2>
-  </div>
-
-  <p>...</p>
-</section>
-
-
-<footer>
-  <div class="logo"><b>F</b><span>FocusOS</span></div>
 </footer>
 
 </body>

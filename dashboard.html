@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FocusOS | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body class="dashboard-page">
+
+<header class="dashboard-topbar">
+
+    <a href="index.html"
+       class="brand-logo light-brand">
+
+        <span class="logo-circle"></span>
+
+        <strong>
+            FOCUS OS
+        </strong>
+
+    </a>
+
+
+    <div class="topbar-label">
+
+        <small>
+            DASHBOARD OVERVIEW
+        </small>
+
+        <span>
+            SESSION ANALYTICS
+        </span>
+
+    </div>
+
+
+    <a href="session.html"
+       class="topbar-action">
+
+        + New Session
+
+    </a>
+
+</header>
+
+
+<div class="dashboard-shell">
+
+
+    <aside class="dashboard-sidebar">
+
+        <small>
+            OVERVIEW
+        </small>
+
+
+        <a href="#dashboardOverview"
+           class="sidebar-link active">
+
+            ▦ Dashboard
+
+        </a>
+
+
+        <a href="#sessionsArea"
+           class="sidebar-link">
+
+            ◌ Sessions
+
+        </a>
+
+
+        <a href="#incidentsArea"
+           class="sidebar-link">
+
+            ✦ Incidents
+
+        </a>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="session.html"
+               class="sidebar-link">
+
+                + Start Session
+
+            </a>
+
+
+            <a href="index.html"
+               class="sidebar-link">
+
+                ← Home
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main
+        class="dashboard-content"
+        id="dashboardOverview">
+
+
+        <section class="dashboard-title">
+
+            <div>
+
+                <span class="eyebrow">
+                    YOUR FOCUS DATA
+                </span>
+
+                <h1>
+                    Your dashboard
+                </h1>
+
+                <p>
+                    Review focus sessions,
+                    productivity, and distraction
+                    information.
+                </p>
+
+            </div>
+
+
+            <div class="period-buttons">
+
+                <button
+                    class="period-button active"
+                    type="button">
+
+                    Today
+
+                </button>
+
+
+                <button
+                    class="period-button"
+                    type="button">
+
+                    This Week
+
+                </button>
+
+
+                <button
+                    class="period-button"
+                    type="button">
+
+                    This Month
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-metrics">
+
+
+            <article class="dashboard-metric">
+
+                <small>
+                    FOCUS SCORE
+                </small>
+
+
+                <div class="score-circle">
+
+                    <strong>
+                        --
+                    </strong>
+
+                </div>
+
+
+                <p>
+                    Complete a focus session
+                    to view your score.
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-metric">
+
+                <small>
+                    FOCUSED TIME
+                </small>
+
+
+                <strong class="big-stat">
+                    0m
+                </strong>
+
+
+                <p>
+                    Across completed sessions
+                </p>
+
+
+                <div class="blank-chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </article>
+
+
+            <article class="dashboard-metric">
+
+                <small>
+                    INTERVENTIONS
+                </small>
+
+
+                <strong class="big-stat">
+                    0
+                </strong>
+
+
+                <p>
+                    Focus reminders delivered
+                </p>
+
+
+                <div class="recovery-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <small>
+                    NO DATA YET
+                </small>
+
+            </article>
+
+        </section>
+
+
+        <section
+            class="dashboard-panel"
+            id="sessionsArea">
+
+            <div class="panel-title">
+
+                <div>
+
+                    <small>
+                        FOCUS SESSION ANALYTICS
+                    </small>
+
+                    <h2>
+                        Recent sessions
+                    </h2>
+
+                </div>
+
+
+                <span>
+                    0 TOTAL
+                </span>
+
+            </div>
+
+
+            <div class="session-table-header">
+
+                <span>SESSION</span>
+                <span>GOAL</span>
+                <span>DURATION</span>
+                <span>FOCUS SCORE</span>
+                <span>INCIDENTS</span>
+
+            </div>
+
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    ◌
+                </div>
+
+                <h3>
+                    No focus sessions yet
+                </h3>
+
+                <p>
+                    Once you complete a FocusOS
+                    session, your session history
+                    will appear here.
+                </p>
+
+
+                <a href="session.html"
+                   class="button-primary">
+
+                    Start First Session
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section
+            class="dashboard-panel"
+            id="incidentsArea">
+
+            <div class="panel-title">
+
+                <div>
+
+                    <small>
+                        DISTRACTION TRACKING
+                    </small>
+
+                    <h2>
+                        Recent incidents
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    !
+                </div>
+
+                <h3>
+                    No incidents recorded
+                </h3>
+
+                <p>
+                    Distraction incidents will
+                    appear here after FocusOS
+                    records session activity.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
