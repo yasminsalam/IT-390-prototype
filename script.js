@@ -507,3 +507,156 @@ sidebarLinks.forEach(
 
     }
 );
+
+/* =========================================
+   LOGIN FORM
+========================================= */
+
+const loginForm =
+    document.getElementById("loginForm");
+
+const loginError =
+    document.getElementById("loginError");
+
+const loginErrorText =
+    document.getElementById("loginErrorText");
+
+const emailInput =
+    document.getElementById("email");
+
+const passwordInput =
+    document.getElementById("password");
+
+
+if (loginForm) {
+
+    loginForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const email =
+                emailInput.value.trim();
+
+            const password =
+                passwordInput.value.trim();
+
+
+            /* Clear old errors */
+
+            hideLoginError();
+
+
+            /* Empty email */
+
+            if (!email) {
+
+                showLoginError(
+                    "Please enter your email address."
+                );
+
+                emailInput.classList.add(
+                    "input-error"
+                );
+
+                return;
+            }
+
+
+            /* Empty password */
+
+            if (!password) {
+
+                showLoginError(
+                    "Please enter your password."
+                );
+
+                passwordInput.classList.add(
+                    "input-error"
+                );
+
+                return;
+            }
+
+
+           
+
+            showLoginError(
+                "We couldn't find an account with those login details."
+            );
+
+        }
+    );
+}
+
+
+/* SHOW LOGIN ERROR*/
+
+function showLoginError(message) {
+
+    if (!loginError) {
+        return;
+    }
+
+
+    loginErrorText.textContent =
+        message;
+
+
+    loginError.classList.remove(
+        "hidden"
+    );
+}
+
+
+/* HIDE LOGIN ERROR*/
+
+function hideLoginError() {
+
+    if (!loginError) {
+        return;
+    }
+
+
+    loginError.classList.add(
+        "hidden"
+    );
+
+
+    if (emailInput) {
+
+        emailInput.classList.remove(
+            "input-error"
+        );
+    }
+
+
+    if (passwordInput) {
+
+        passwordInput.classList.remove(
+            "input-error"
+        );
+    }
+}
+
+
+/* REMOVE ERROR WHEN USER TYPES AGAIN */
+
+if (emailInput) {
+
+    emailInput.addEventListener(
+        "input",
+        hideLoginError
+    );
+}
+
+
+if (passwordInput) {
+
+    passwordInput.addEventListener(
+        "input",
+        hideLoginError
+    );
+}

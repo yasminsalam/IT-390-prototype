@@ -1843,3 +1843,43 @@ button {
         align-items: flex-start;
     }
 }
+
+/*LOGIN ERROR */
+
+.login-error {
+    margin: 20px 0;
+
+    padding: 14px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    background: #fff1f1;
+
+    color: #9b2323;
+
+    border: 1px solid #e6b8b8;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+}
+
+
+.login-error strong {
+    font-size: 13px;
+}
+
+
+.login-error span {
+    color: #7d3a3a;
+}
+
+
+.input-error {
+    border-color: #c64a4a !important;
+
+    background: #fffafa !important;
+}
